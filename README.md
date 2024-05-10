@@ -2,7 +2,7 @@
  * @Author: yan_c 1905812142@qq.com
  * @Date: 2024-05-10 10:36:15
  * @LastEditors: yan_c 1905812142@qq.com
- * @LastEditTime: 2024-05-10 11:27:54
+ * @LastEditTime: 2024-05-10 11:36:11
  * @FilePath: \ytg_admind:\PersonalProject\TypeScript\ts-test\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -14,3 +14,5 @@
 * 组合类型
 # TypeScript 安装
 ` npm install -g typescript`
+安装完成后就有了TSC 编译器，TypeScript没有提供运行环境，只能编译器把TS转为JS执行
+默认情况下，TS以ES3为转换目标
