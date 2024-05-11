@@ -2,7 +2,7 @@
  * @Author: yan_c 1905812142@qq.com
  * @Date: 2024-05-10 10:36:15
  * @LastEditors: yan_c 1905812142@qq.com
- * @LastEditTime: 2024-05-11 14:59:48
+ * @LastEditTime: 2024-05-11 16:40:48
  * @FilePath: \ytg_admind:\PersonalProject\TypeScript\ts-test\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -40,4 +40,15 @@ const user:myuser = {
   name:'哈哈',
   age:387
 }
+
+type Gender = '男' | '女'
 ```
+
+# 枚举
+```typescript
+enum Gender{
+  male = '男',
+  female = '女'
+}
+
+let str = Gender.male;
