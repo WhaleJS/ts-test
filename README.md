@@ -59,4 +59,5 @@ let str = Gender.male;
 
 
 1.接口约束类
+
 2.接口约束对象
