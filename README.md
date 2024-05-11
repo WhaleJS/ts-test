@@ -2,7 +2,7 @@
  * @Author: yan_c 1905812142@qq.com
  * @Date: 2024-05-10 10:36:15
  * @LastEditors: yan_c 1905812142@qq.com
- * @LastEditTime: 2024-05-11 14:44:16
+ * @LastEditTime: 2024-05-11 14:59:48
  * @FilePath: \ytg_admind:\PersonalProject\TypeScript\ts-test\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -28,3 +28,16 @@
 * 字面量类型`let str:'A'` 表示该变量将来只能赋值成对应的字面量
 * 元组类型 - 一个固定长度的数组 且类型一致
 * `any`类型 - 表示所有类型 开启`any`可以绕过类型检查
+
+# 类型别名
+其实就是自定义类型  相当于中转变量
+```typescript
+type myuser = {
+  name:string,
+  age:number
+}
+const user:myuser = {
+  name:'哈哈',
+  age:387
+}
+```
