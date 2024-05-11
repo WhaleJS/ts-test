@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        // 编译选项
+        "target": "ES2015", // 转换的代码版本
+        "module": "CommonJS", // 模块化标砖
+        "lib": ["ES2015"], // 使用TS的标准
+        "outDir": "./dist", // 编译结果输出目标
+        "strictNullChecks": true, // 开启null和undefined的严格类型检查 使其不能赋值给子类型
+    },
+    "include": ["./src"] // 编译哪些TS文件
+    // npm i -D @types/node
+    // ts-node三方库 可以在内存中直接编译 同时运行  可以不用编译后再运行 npm i ts-node  => ts-node src/index.ts
+    // nodemon npm i nodemon -g => nodemon --exec ts-node src/index.ts  监听文件变化 自动运行ts-node命令
+    // 可以配置在 package.json 中 script
+}
