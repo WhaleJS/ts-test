@@ -2,7 +2,7 @@
  * @Author: yan_c 1905812142@qq.com
  * @Date: 2024-05-10 10:36:15
  * @LastEditors: yan_c 1905812142@qq.com
- * @LastEditTime: 2024-05-11 18:23:30
+ * @LastEditTime: 2024-05-11 18:24:39
  * @FilePath: \ytg_admind:\PersonalProject\TypeScript\ts-test\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -56,4 +56,6 @@ let str = Gender.male;
 枚举会出现在编译结果中  以对象的形式呈现
 # 接口
 用于约束 类、对象、函数的标准 或者说叫做命名对象类型的一种形式
+
+
 1.接口约束类
