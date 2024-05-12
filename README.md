@@ -2,7 +2,7 @@
  * @Author: yan_c 1905812142@qq.com
  * @Date: 2024-05-10 10:36:15
  * @LastEditors: yan_c 1905812142@qq.com
- * @LastEditTime: 2024-05-11 18:24:39
+ * @LastEditTime: 2024-05-12 23:32:10
  * @FilePath: \ytg_admind:\PersonalProject\TypeScript\ts-test\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -55,9 +55,47 @@ let str = Gender.male;
 ```
 枚举会出现在编译结果中  以对象的形式呈现
 # 接口
-用于约束 类、对象、函数的标准 或者说叫做命名对象类型的一种形式
+用于约束 类、对象、函数的标准 或者说叫做命名对象类型的一种形式,接口和类型别名区别不大，接口可以扩展 还可以用于约束类
+同时接口不会出现在编译结果中
 
 
 1.接口约束类
 
 2.接口约束对象
+
+# 泛型
+抒写函数时，丢失了类型信息(多位置的类型应该保持一致 或者有关联)。
+泛型是附属于类、接口、类型别名上的类型,相当于类型变量,TS 会根据传递的参数进行类型推导,如果无法推导，默认为空对象
+```typescript
+
+function test<T>(array:T[],info?:object){
+
+}
+test<string>(['1'],'2')
+```
+1. 在函数中使用泛型 - 在函数名字后使用即可
+2. 在类型别名、接口中使用泛型
+3. 泛型约束就是限制泛型的取值
+4. 多泛型
+```typescript
+function test<T,K>(arr1:T[],arr2::K[]):(T | K)[]{
+  let result:(T | K)[] = []
+}
+```
+
+# TypeScript总结
+**如何约束类型**
+变量、参数、函数的返回值
+- 基本类型:`boolean、number、string、object、array、void、never、null、undefined`
+  - `null` 和 `undefined` 在开启了 `strictNullChecks` 后只能赋值给自身
+- 扩展类型：类型别名、枚举、接口、类
+
+类型别名、接口不产生编译结果，枚举和类会产生编译结果,枚举编译后为对象，类编译后为JS类
+
+TS类：属性列表、修饰符(readonly、访问修饰符：public、private、protected)
+
+泛型: 就是用于类型变量
+
+类型断言：开发者很清楚类型  但是TS难以分辨时使用 
+
+
