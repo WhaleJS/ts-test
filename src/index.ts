@@ -2,11 +2,11 @@
  * @Author: yan_c 1905812142@qq.com
  * @Date: 2024-05-10 18:10:08
  * @LastEditors: yanchang 1905812142@qq.com
- * @LastEditTime: 2024-07-03 13:54:09
+ * @LastEditTime: 2024-07-03 13:57:07
  * @FilePath: \ytg_admind:\PersonalProject\TypeScript\ts-test\src\index.ts
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
-// dve分支新建gitgit
+// dve分支新建git 再次更新
 let value1:number = 1; // 基本数字类
 let value2:string = '2'; // 基本字符串类
 let value3:boolean = true; // 基本布尔类
